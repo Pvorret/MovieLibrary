@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MovieLibrary.View;
 
 namespace MovieLibrary
 {
@@ -23,6 +24,23 @@ namespace MovieLibrary
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AddMovie_Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddMovie addMovie = new AddMovie();
+            addMovie.ShowDialog();
+        }
+
+        private void ViewMovies_Button_Click(object sender, RoutedEventArgs e)
+        {
+            ViewMovies viewMovies = new ViewMovies();
+            viewMovies.ShowDialog();
+        }
+
+        private void Exit_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
