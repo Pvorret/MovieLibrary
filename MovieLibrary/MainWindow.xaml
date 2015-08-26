@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MovieLibrary"
         mc:Ignorable="d"
-        Title="Movie Library" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+        Title="Movie Library" Height="225" Width="200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        
+        <Label x:Name="Title_Label" Content="Movie Library" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" FontSize="20" FontStyle="Italic">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.877"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="AddMovie_Button" Content="Tilføj Film" HorizontalAlignment="Left" Margin="59,62,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ViewMovies_Button" Content="Alle Film" HorizontalAlignment="Left" Margin="59,102,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Exit_Button" Content="Afslut" HorizontalAlignment="Left" Margin="59,142,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
